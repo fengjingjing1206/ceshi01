@@ -1,0 +1,134 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience Fengjingjing - A serene landscape exploration game blending traditional Chinese art with modern gameplay mechanics. Free browser-based adventure.">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fengjingjing.com/">
+    
+    <title>Fengjingjing | Traditional Chinese Landscape Browser Game</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <style>
+        :root {
+            --apple-dark: #1d1d1f;
+            --apple-mid: #86868b;
+            --apple-light: #f5f5f7;
+            --apple-red: #ff3b30;
+        }
+        
+        .game-wrapper {
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, var(--apple-light) 0%, #ffffff 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .game-wrapper {
+                height: 65vh;
+                aspect-ratio: unset;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[var(--apple-light)] text-[var(--apple-dark)] font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <span class="text-2xl font-medium tracking-tight">Fengjingjing.com</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Game Header -->
+        <h1 class="text-5xl md:text-6xl font-bold mb-4 text-[var(--apple-red)]">
+            Fengjingjing
+        </h1>
+        <p class="text-xl text-[var(--apple-mid)] mb-10">
+            Embark on a serene journey through ancient Chinese landscapes
+        </p>
+
+        <!-- Game Embed -->
+        <div class="game-wrapper rounded-2xl shadow-2xl overflow-hidden mb-14">
+            <iframe 
+                src="https://fengjingjing.com" 
+                class="w-full h-full border-none"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope"
+                title="Fengjingjing Landscape Browser Game"
+                loading="eager"
+                sandbox="allow-same-origin allow-scripts allow-popups">
+            </iframe>
+        </div>
+
+        <!-- Game Details -->
+        <article class="space-y-10">
+            <section>
+                <h2 class="text-3xl font-semibold mb-6">Artistic Journey</h2>
+                <p class="text-lg leading-relaxed max-w-3xl">
+                    Fengjingjing reimagines traditional Shan Shui painting in interactive form. Navigate through dynamically generated landscapes influenced by real Chinese geography and historical art patterns.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="text-3xl font-semibold mb-6">Game Features</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <ul class="space-y-3 list-disc pl-6">
+                        <li>Procedural landscape generation</li>
+                        <li>4 distinct artistic seasons</li>
+                        <li>Dynamic weather system</li>
+                    </ul>
+                    <ul class="space-y-3 list-disc pl-6">
+                        <li>Historical Chinese poetry integration</li>
+                        <li>Relaxation mode with guided meditation</li>
+                        <li>Cultural artifact collection system</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-3xl font-semibold mb-6">Technical Requirements</h2>
+                <div class="bg-white p-6 rounded-xl shadow-lg">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-lg font-medium mb-2">Supported Browsers</h3>
+                            <ul class="space-y-1">
+                                <li>• Chrome 100+</li>
+                                <li>• Safari 15.4+</li>
+                                <li>• Firefox 98+</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-medium mb-2">System Requirements</h3>
+                            <ul class="space-y-1">
+                                <li>• WebGL 2.0 support</li>
+                                <li>• 4GB RAM minimum</li>
+                                <li>• 5MB/s internet connection</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-16">
+        <div class="max-w-6xl mx-auto px-4 py-8 text-center">
+            <p class="text-[var(--apple-mid)]">
+                © 2024 Fengjingjing.com - Interactive Landscape Experience
+            </p>
+            <p class="mt-2 text-sm text-[var(--apple-mid)]">
+                Best viewed in modern browsers with Chinese localization support
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
