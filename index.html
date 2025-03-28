@@ -1,134 +1,81 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experience Fengjingjing - A serene landscape exploration game blending traditional Chinese art with modern gameplay mechanics. Free browser-based adventure.">
-    
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://fengjingjing.com/">
-    
-    <title>Fengjingjing | Traditional Chinese Landscape Browser Game</title>
-    
-    <!-- Tailwind CSS -->
+    <title>Monster Survivors - Epic Survival Adventure Game | fengjingjing.com</title>
+    <meta name="description" content="Play Monster Survivors, an intense survival adventure game where you battle endless waves of monsters. Experience thrilling action and strategic gameplay!">
+    <link rel="canonical" href="https://fengjingjing.com/monster-survivors" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Custom CSS -->
     <style>
-        :root {
-            --apple-dark: #1d1d1f;
-            --apple-mid: #86868b;
-            --apple-light: #f5f5f7;
-            --apple-red: #ff3b30;
-        }
-        
-        .game-wrapper {
-            aspect-ratio: 16/9;
-            background: linear-gradient(135deg, var(--apple-light) 0%, #ffffff 100%);
-        }
-        
-        @media (max-width: 768px) {
-            .game-wrapper {
-                height: 65vh;
-                aspect-ratio: unset;
-            }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f7;
+            color: #1d1d1f;
         }
     </style>
 </head>
-<body class="bg-[var(--apple-light)] text-[var(--apple-dark)] font-sans">
-    <!-- Header -->
-    <header class="bg-white shadow-sm">
-        <nav class="max-w-6xl mx-auto px-4 py-4">
-            <div class="flex items-center justify-between">
-                <span class="text-2xl font-medium tracking-tight">Fengjingjing.com</span>
+<body>
+    <div class="min-h-screen">
+        <!-- Header Section -->
+        <header class="bg-[#000000] text-white py-6">
+            <div class="container mx-auto px-4">
+                <h1 class="text-4xl md:text-5xl font-bold text-center">Monster Survivors</h1>
+                <p class="text-xl text-center mt-4 text-gray-300">Survive, Fight, and Conquer in this Epic Adventure!</p>
             </div>
-        </nav>
-    </header>
+        </header>
 
-    <!-- Main Content -->
-    <main class="max-w-6xl mx-auto px-4 py-8">
-        <!-- Game Header -->
-        <h1 class="text-5xl md:text-6xl font-bold mb-4 text-[var(--apple-red)]">
-            Fengjingjing
-        </h1>
-        <p class="text-xl text-[var(--apple-mid)] mb-10">
-            Embark on a serene journey through ancient Chinese landscapes
-        </p>
+        <!-- Main Game Section -->
+        <main class="container mx-auto px-4 py-8">
+            <!-- Game Frame -->
+            <div class="bg-white rounded-xl shadow-lg p-4 mb-8">
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html"
+                            class="w-full h-[600px] rounded-lg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
 
-        <!-- Game Embed -->
-        <div class="game-wrapper rounded-2xl shadow-2xl overflow-hidden mb-14">
-            <iframe 
-                src="https://fengjingjing.com" 
-                class="w-full h-full border-none"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope"
-                title="Fengjingjing Landscape Browser Game"
-                loading="eager"
-                sandbox="allow-same-origin allow-scripts allow-popups">
-            </iframe>
-        </div>
+            <!-- Game Description -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <section class="bg-white rounded-xl p-6 shadow-lg">
+                    <h2 class="text-2xl font-bold mb-4 text-[#1d1d1f]">Game Overview</h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        Monster Survivors is an intense survival game where you face endless waves of monsters. Use your skills and strategy to survive as long as possible while collecting power-ups and defeating increasingly challenging enemies.
+                    </p>
+                </section>
 
-        <!-- Game Details -->
-        <article class="space-y-10">
-            <section>
-                <h2 class="text-3xl font-semibold mb-6">Artistic Journey</h2>
-                <p class="text-lg leading-relaxed max-w-3xl">
-                    Fengjingjing reimagines traditional Shan Shui painting in interactive form. Navigate through dynamically generated landscapes influenced by real Chinese geography and historical art patterns.
-                </p>
-            </section>
-
-            <section>
-                <h2 class="text-3xl font-semibold mb-6">Game Features</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <ul class="space-y-3 list-disc pl-6">
-                        <li>Procedural landscape generation</li>
-                        <li>4 distinct artistic seasons</li>
-                        <li>Dynamic weather system</li>
+                <section class="bg-white rounded-xl p-6 shadow-lg">
+                    <h2 class="text-2xl font-bold mb-4 text-[#1d1d1f]">Key Features</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Endless survival gameplay</li>
+                        <li>Multiple character abilities</li>
+                        <li>Progressive difficulty system</li>
+                        <li>Dynamic power-up system</li>
+                        <li>Beautiful pixel art graphics</li>
                     </ul>
-                    <ul class="space-y-3 list-disc pl-6">
-                        <li>Historical Chinese poetry integration</li>
-                        <li>Relaxation mode with guided meditation</li>
-                        <li>Cultural artifact collection system</li>
-                    </ul>
+                </section>
+            </div>
+
+            <!-- How to Play -->
+            <section class="bg-white rounded-xl p-6 shadow-lg mt-8">
+                <h2 class="text-2xl font-bold mb-4 text-[#1d1d1f]">How to Play</h2>
+                <div class="text-gray-700 space-y-4">
+                    <p>Use WASD or arrow keys to move your character. Automatically attack nearby enemies and collect experience orbs to level up. Choose power-ups wisely to create powerful combinations and survive longer.</p>
                 </div>
             </section>
+        </main>
 
-            <section>
-                <h2 class="text-3xl font-semibold mb-6">Technical Requirements</h2>
-                <div class="bg-white p-6 rounded-xl shadow-lg">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <h3 class="text-lg font-medium mb-2">Supported Browsers</h3>
-                            <ul class="space-y-1">
-                                <li>• Chrome 100+</li>
-                                <li>• Safari 15.4+</li>
-                                <li>• Firefox 98+</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-medium mb-2">System Requirements</h3>
-                            <ul class="space-y-1">
-                                <li>• WebGL 2.0 support</li>
-                                <li>• 4GB RAM minimum</li>
-                                <li>• 5MB/s internet connection</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </article>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t mt-16">
-        <div class="max-w-6xl mx-auto px-4 py-8 text-center">
-            <p class="text-[var(--apple-mid)]">
-                © 2024 Fengjingjing.com - Interactive Landscape Experience
-            </p>
-            <p class="mt-2 text-sm text-[var(--apple-mid)]">
-                Best viewed in modern browsers with Chinese localization support
-            </p>
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer class="bg-[#000000] text-white py-6 mt-8">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2025 fengjingjing.com - Monster Survivors. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
